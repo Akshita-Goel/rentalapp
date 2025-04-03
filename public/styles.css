@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+    color: #ffd700; /* Golden text */
+    background: linear-gradient(135deg, #4b0082, #2a0038); /* Deep magical purple */
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #4b0082, #2a0038);
+    color: #ffd700;
+    margin:0;
+    border:none;
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 1.8rem;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 6rem 2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/random/1600x900/?stars,galaxy') no-repeat center center/cover;
+    color: #ffd700;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 1);
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Form Section */
+.preference-form {
+    background:  inherit;
+    padding: 4rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.preference-form h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.9);
+}
+
+.form-group {
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+    background: inherit;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 1);
+}
+
+.form-group h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 0.6rem;
+}
+
+.form-field {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ffd700;
+    border-radius: 6px;
+    background: inherit;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #fff;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 1);
+}
+
+/* Checkbox & Radio Buttons */
+.amenities-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.amenity-item {
+    display: flex;
+    align-items: center;
+    background: inherit;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.amenity-item:hover {
+    transform: scale(1.05);
+}
+
+.amenity-item input {
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+}
+
+/* Buttons */
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary {
+    background: #ffd700;
+    color: #2a0038;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 1);
+}
+
+.btn-primary:hover {
+    background: #fff;
+    color: #2a0038;
+}
+
+/* Results Section */
+.results {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: inherit;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+    margin-top: 3rem;
+}
+
+.results h2 {
+    font-size: 2rem;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.9);
+}
+
+.properties-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #4b0082, #2a0038);
+    color: white;
+    padding: 3rem 0 1rem;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-section h3 {
+    color: #ffd700;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 0.5rem 0;
+}
+
+.footer-section ul li a {
+    color: #ffd700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+    }
+    
+    .form-group {
+        padding: 1.5rem;
+    }
+    
+    .properties-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Dropdown & Date Picker */
+select, input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ffd700;
+    border-radius: 6px;
+    background: inherit;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    appearance: none; /* Removes default arrow for select */
+    position: relative;
+}
+
+/* Ensure dropdown options are visible */
+select option {
+    background: linear-gradient(135deg, #4b0082, #2a0038);
+    color: black;
+    padding: 10px;
+}
+
+/* Custom Arrow for Select */
+select {
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23ffd700" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+    padding-right: 40px; /* Adjust for the arrow */
+}
+
+/* Hover & Focus Effects */
+select:hover, input[type="date"]:hover,
+select:focus, input[type="date"]:focus {
+    outline: none;
+    border-color: #fff;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 1);
+}
+
+/* Date Picker */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+/* Form Labels */
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #ffd700;
+}
+
+/* Layout for Property Cards */
+.property-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Property Card */
+.property-card {
+    background: white;
+    border: 2px solid gold;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5);
+    width: 320px; /* Equal width for all cards */
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.property-card:hover {
+    transform: scale(1.01);
+}
+
+/* Property Image */
+.property-image {
+    width: 100%;
+    height: 200px; /* Fixed height for all images */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-bottom: 2px solid gold;
+}
+
+.property-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the full image is visible without stretching */
+}
+
+/* Property Details */
+.property-details {
+    padding: 15px;
+    color: black;
+    text-align: center;
+}
+
+/* Property Price */
+.property-price {
+    background: rgba(255, 215, 0, 0.8);
+    color: black;
+    padding: 6px 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/* Features */
+.property-features {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.property-feature {
+    background: inherit;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+/* Amenities */
+.property-amenities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.property-amenity {
+    background: inherit;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+}
+
+/* Buttons */
+.property-actions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.btn-view, .btn-virtual-tour {
+    background: gold;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-save {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: gold;
+}
+
+.btn-save:hover {
+    color: black;
+}
